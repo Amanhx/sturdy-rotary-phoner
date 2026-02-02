@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boobswali Heat 😈💦</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000, #200010);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .main {
+            flex: 3;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .side {
+            flex: 1;
+            background: linear-gradient(to bottom, #c71585, #ff006e);
+            padding: 15px;
+            overflow-y: auto;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 0 0 20px #ff1493;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff69b4; }
+            to { text-shadow: 0 0 40px #ff1493; }
+        }
+        .btn {
+            background: linear-gradient(45deg, #ff006e, #ff4d4d);
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            margin: 20px 0;
+            cursor: pointer;
+            box-shadow: 0 0 30px #ff1493;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 60px #ff69b4;
+        }
+        .card {
+            background: rgba(0,0,0,0.6);
+            border-radius: 15px;
+            margin: 15px 0;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px #ff1493;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .loading {
+            font-size: 1.5em;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Welcome, <span id="user">Hotty</span>! 🔥💋</h1>
+            <div class="loading">Unlocking forbidden fun... 😏</div>
+            <button class="btn" onclick="openYT()">Subscribe @cielostatment NOW 💦 Unlock Heat</button>
+            <p>Subscribe kar, phir side ke viral teases khol sakta hai 😈</p>
+        </div>
+
+        <div class="side">
+            <h2>Viral Hot Clips 💦</h2>
+            <div class="card" onclick="joinChannel('https://t.me/+9oIxlOeKeSgyOWU8')">
+                <img src="https://i.imgur.com/example-tease1.jpg" alt="Tease 1"> <!-- Replace with real Imgur link -->
+                <p>Private Tease 1 – Too Spicy 😏</p>
+            </div>
+            <div class="card" onclick="joinChannel('https://t.me/+9RhmHe9iRwE1MmFk')">
+                <img src="https://i.imgur.com/example-desires2.jpg" alt="Desires"> <!-- Replace -->
+                <p>Midnight Desires 2 – Wet Vibes 🔥</p>
+            </div>
+            <div class="card" onclick="joinChannel('https://t.me/+6aRUflYGBRo0MmU8')">
+                <img src="https://i.imgur.com/example-secrets3.jpg" alt="Secrets"> <!-- Replace -->
+                <p>Erotic Secrets 3 – Touch Me 💋</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+
+        const user = Telegram.WebApp.initDataUnsafe.user;
+        if (user && user.username) {
+            document.getElementById('user').innerText = user.username;
+        }
+
+        function openYT() {
+            Telegram.WebApp.openLink('https://www.youtube.com/@cielostatment?sub_confirmation=1');
+        }
+
+        function joinChannel(link) {
+            Telegram.WebApp.openTelegramLink(link);
+            Telegram.WebApp.showAlert('Channel join ho raha... Enjoy the fire! 🔥💦');
+        }
+    </script>
+</body>
+</html>
