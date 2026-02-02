@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Boobswali Forbidden Heat 😈💦</title>
+    <title>Forbidden Sexy Realm 😈💦</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <style>
         :root {
             --tg-viewport-height: 100vh;
@@ -13,138 +14,134 @@
         }
         body {
             margin: 0;
-            padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #000, #200010);
-            color: white;
+            padding: var(--tg-safe-area-inset-top) 0 var(--tg-safe-area-inset-bottom) 0;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #000000, #1a000a, #000) !important;
+            color: #fff;
             height: var(--tg-viewport-height);
             overflow: hidden;
+            animation: bg-pulse 10s infinite alternate;
+        }
+        @keyframes bg-pulse {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
         .container {
             display: flex;
-            flex-direction: row;
-            height: 100%;
-        }
-        .main {
-            flex: 3;
-            padding: 20px;
-            text-align: center;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-        }
-        .side {
-            flex: 1.5;
-            background: linear-gradient(to bottom, #c71585, #ff006e);
-            padding: 15px;
-            overflow-y: auto;
+            justify-content: center;
+            height: 100%;
+            padding: 20px;
+            overflow-y: auto; /* Scrollable for mobile */
         }
         h1 {
-            font-size: 2.2em;
-            text-shadow: 0 0 20px #ff1493;
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 2.5em;
+            text-shadow: 0 0 30px #ff69b4, 0 0 50px #ff1493;
             animation: glow 2s infinite alternate;
+            margin-bottom: 20px;
         }
         @keyframes glow {
-            from { text-shadow: 0 0 10px #ff69b4; }
-            to { text-shadow: 0 0 40px #ff1493; }
+            from { text-shadow: 0 0 20px #ff69b4; }
+            to { text-shadow: 0 0 60px #ff1493, 0 0 80px #c71585; }
         }
-        .btn {
-            background: linear-gradient(45deg, #ff006e, #ff4d4d);
-            border: none;
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.4em;
-            border-radius: 50px;
-            margin: 20px 0;
-            cursor: pointer;
-            box-shadow: 0 0 30px #ff1493;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 60px #ff69b4;
-        }
-        .card {
-            background: rgba(0,0,0,0.6);
-            border-radius: 15px;
-            margin: 12px 0;
-            padding: 10px;
-            cursor: pointer;
-            text-align: center;
-            transition: all 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 30px #ff1493;
-        }
-        .card img {
+        .viral-section {
             width: 100%;
-            border-radius: 10px;
-            height: 140px;
-            object-fit: cover;
+            max-width: 600px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 50px #ff1493;
         }
-        .loading {
-            font-size: 1.4em;
+        h2 {
+            font-size: 1.8em;
+            text-align: center;
             color: #ff69b4;
             margin-bottom: 15px;
+            text-shadow: 0 0 20px #ff1493;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(45deg, rgba(255,20,147,0.2), rgba(199,21,133,0.2));
+            border-radius: 15px;
+            margin: 15px 0;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.4s;
+            box-shadow: 0 10px 30px rgba(255,20,147,0.4);
+        }
+        .card:hover {
+            transform: scale(1.15) rotate(2deg);
+            box-shadow: 0 40px 80px #ff1493;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid #ff69b4;
+            box-shadow: 0 0 20px #ff1493;
+        }
+        .card p {
+            font-size: 1.4em;
+            color: #fff;
+            text-shadow: 0 0 10px #ff69b4;
+        }
+        .loading {
+            font-size: 1.5em;
+            color: #ff69b4;
+            text-align: center;
+            margin: 20px 0;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
         }
 
-        /* Mobile responsive: Side bar bottom pe shift for small screens */
+        /* Mobile tweaks */
         @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .main {
-                flex: none;
-                height: 50%;
-                padding: 15px;
-            }
-            .side {
-                flex: none;
-                height: 50%;
-                border-top: 3px solid #ff1493;
-            }
-            h1 { font-size: 1.8em; }
-            .btn { padding: 12px 30px; font-size: 1.2em; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+            .card img { width: 60px; height: 60px; }
+            .card p { font-size: 1.2em; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            <h1>Welcome, <span id="user">Naughty</span>! Dive Deep 🔥💋</h1>
-            <div class="loading">Unlocking hot secrets... 😏💦</div>
-            <button class="btn" onclick="openYT()">Subscribe @cielostatment NOW 💦 Unlock All</button>
-            <p>Subscribe kar pehle, phir neeche viral channels join kar 😈</p>
-        </div>
-
-        <div class="side">
-            <h2>Hot Viral Channels 💦</h2>
+        <h1>Welcome, <span id="user">Sexy Stranger</span>! Enter the Heat 😈💦</h1>
+        <div class="loading">Unlocking Viral Desires... 🔥💋</div>
+        <div class="viral-section">
+            <h2>Instagram Sexy Viral Video Links 💦😏</h2>
             <div class="card" onclick="joinChannel('https://t.me/+9oIxlOeKeSgyOWU8')">
-                <img src="https://i.imgur.com/your-tease1.jpg" alt="Tease"> <!-- Real Imgur link daal -->
-                <p>Private Tease 1 – Spicy 😏</p>
+                <img src="https://i.imgur.com/sexy-tease1.jpg" alt="Tease"> <!-- Real sexy small image Imgur link daal -->
+                <p>Private Tease 1 – Hot & Wet 🔥</p>
             </div>
             <div class="card" onclick="joinChannel('https://t.me/+9RhmHe9iRwE1MmFk')">
-                <img src="https://i.imgur.com/your-desires2.jpg" alt="Desires"> <!-- Replace -->
-                <p>Midnight Desires 2 – Wet 🔥</p>
+                <img src="https://i.imgur.com/sexy-desires2.jpg" alt="Desires"> <!-- Replace with real -->
+                <p>Midnight Desires 2 – Forbidden Touch 💋</p>
             </div>
             <div class="card" onclick="joinChannel('https://t.me/+6aRUflYGBRo0MmU8')">
-                <img src="https://i.imgur.com/your-secrets3.jpg" alt="Secrets"> <!-- Replace -->
-                <p>Erotic Secrets 3 – Touch 💋</p>
+                <img src="https://i.imgur.com/sexy-secrets3.jpg" alt="Secrets"> <!-- Replace -->
+                <p>Erotic Secrets 3 – Naughty Vibes 😈</p>
             </div>
             <div class="card" onclick="joinChannel('https://t.me/Crypto_VideosTon')">
-                <img src="https://i.imgur.com/your-crypto.jpg" alt="Crypto"> <!-- Sexy thumbnail upload kar ke daal -->
-                <p>Crypto Videos Ton – Hot Gains 😈</p>
+                <img src="https://i.imgur.com/sexy-crypto4.jpg" alt="Crypto"> <!-- Replace with sexy thumbnail -->
+                <p>Crypto Videos Ton – Spicy Gains 💦</p>
             </div>
         </div>
     </div>
 
     <script>
-        // Telegram init jaldi call
         if (window.Telegram && Telegram.WebApp) {
             Telegram.WebApp.ready();
-            Telegram.WebApp.expand(); // Full screen
-            Telegram.WebApp.enableClosingConfirmation(); // Optional
+            Telegram.WebApp.expand();
+            Telegram.WebApp.enableClosingConfirmation();
 
             const user = Telegram.WebApp.initDataUnsafe.user;
             if (user && user.username) {
@@ -152,13 +149,9 @@
             }
         }
 
-        function openYT() {
-            Telegram.WebApp.openLink('https://www.youtube.com/@cielostatment?sub_confirmation=1');
-        }
-
         function joinChannel(link) {
             Telegram.WebApp.openTelegramLink(link);
-            Telegram.WebApp.showAlert('Channel join ho raha... Enjoy! 🔥💦');
+            Telegram.WebApp.showAlert('Channel khul raha hai... Dive into the heat! 🔥💦😏');
         }
     </script>
 </body>
