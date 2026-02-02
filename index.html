@@ -2,20 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boobswali Heat 😈💦</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Boobswali Forbidden Heat 😈💦</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
+        :root {
+            --tg-viewport-height: 100vh;
+            --tg-safe-area-inset-top: env(safe-area-inset-top);
+            --tg-safe-area-inset-bottom: env(safe-area-inset-bottom);
+        }
         body {
             margin: 0;
+            padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #000, #200010);
             color: white;
-            height: 100vh;
+            height: var(--tg-viewport-height);
             overflow: hidden;
         }
         .container {
             display: flex;
+            flex-direction: row;
             height: 100%;
         }
         .main {
@@ -28,13 +35,13 @@
             align-items: center;
         }
         .side {
-            flex: 1;
+            flex: 1.5;
             background: linear-gradient(to bottom, #c71585, #ff006e);
             padding: 15px;
             overflow-y: auto;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             text-shadow: 0 0 20px #ff1493;
             animation: glow 2s infinite alternate;
         }
@@ -47,75 +54,102 @@
             border: none;
             color: white;
             padding: 15px 40px;
-            font-size: 1.5em;
+            font-size: 1.4em;
             border-radius: 50px;
             margin: 20px 0;
             cursor: pointer;
             box-shadow: 0 0 30px #ff1493;
         }
         .btn:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 0 0 60px #ff69b4;
         }
         .card {
             background: rgba(0,0,0,0.6);
             border-radius: 15px;
-            margin: 15px 0;
+            margin: 12px 0;
             padding: 10px;
             cursor: pointer;
             text-align: center;
             transition: all 0.3s;
         }
         .card:hover {
-            transform: scale(1.1);
+            transform: scale(1.08);
             box-shadow: 0 0 30px #ff1493;
         }
         .card img {
             width: 100%;
             border-radius: 10px;
-            height: 150px;
+            height: 140px;
             object-fit: cover;
         }
         .loading {
-            font-size: 1.5em;
+            font-size: 1.4em;
             color: #ff69b4;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Mobile responsive: Side bar bottom pe shift for small screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main {
+                flex: none;
+                height: 50%;
+                padding: 15px;
+            }
+            .side {
+                flex: none;
+                height: 50%;
+                border-top: 3px solid #ff1493;
+            }
+            h1 { font-size: 1.8em; }
+            .btn { padding: 12px 30px; font-size: 1.2em; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="main">
-            <h1>Welcome, <span id="user">Hotty</span>! 🔥💋</h1>
-            <div class="loading">Unlocking forbidden fun... 😏</div>
-            <button class="btn" onclick="openYT()">Subscribe @cielostatment NOW 💦 Unlock Heat</button>
-            <p>Subscribe kar, phir side ke viral teases khol sakta hai 😈</p>
+            <h1>Welcome, <span id="user">Naughty</span>! Dive Deep 🔥💋</h1>
+            <div class="loading">Unlocking hot secrets... 😏💦</div>
+            <button class="btn" onclick="openYT()">Subscribe @cielostatment NOW 💦 Unlock All</button>
+            <p>Subscribe kar pehle, phir neeche viral channels join kar 😈</p>
         </div>
 
         <div class="side">
-            <h2>Viral Hot Clips 💦</h2>
+            <h2>Hot Viral Channels 💦</h2>
             <div class="card" onclick="joinChannel('https://t.me/+9oIxlOeKeSgyOWU8')">
-                <img src="https://i.imgur.com/example-tease1.jpg" alt="Tease 1"> <!-- Replace with real Imgur link -->
-                <p>Private Tease 1 – Too Spicy 😏</p>
+                <img src="https://i.imgur.com/your-tease1.jpg" alt="Tease"> <!-- Real Imgur link daal -->
+                <p>Private Tease 1 – Spicy 😏</p>
             </div>
             <div class="card" onclick="joinChannel('https://t.me/+9RhmHe9iRwE1MmFk')">
-                <img src="https://i.imgur.com/example-desires2.jpg" alt="Desires"> <!-- Replace -->
-                <p>Midnight Desires 2 – Wet Vibes 🔥</p>
+                <img src="https://i.imgur.com/your-desires2.jpg" alt="Desires"> <!-- Replace -->
+                <p>Midnight Desires 2 – Wet 🔥</p>
             </div>
             <div class="card" onclick="joinChannel('https://t.me/+6aRUflYGBRo0MmU8')">
-                <img src="https://i.imgur.com/example-secrets3.jpg" alt="Secrets"> <!-- Replace -->
-                <p>Erotic Secrets 3 – Touch Me 💋</p>
+                <img src="https://i.imgur.com/your-secrets3.jpg" alt="Secrets"> <!-- Replace -->
+                <p>Erotic Secrets 3 – Touch 💋</p>
+            </div>
+            <div class="card" onclick="joinChannel('https://t.me/Crypto_VideosTon')">
+                <img src="https://i.imgur.com/your-crypto.jpg" alt="Crypto"> <!-- Sexy thumbnail upload kar ke daal -->
+                <p>Crypto Videos Ton – Hot Gains 😈</p>
             </div>
         </div>
     </div>
 
     <script>
-        Telegram.WebApp.ready();
-        Telegram.WebApp.expand();
+        // Telegram init jaldi call
+        if (window.Telegram && Telegram.WebApp) {
+            Telegram.WebApp.ready();
+            Telegram.WebApp.expand(); // Full screen
+            Telegram.WebApp.enableClosingConfirmation(); // Optional
 
-        const user = Telegram.WebApp.initDataUnsafe.user;
-        if (user && user.username) {
-            document.getElementById('user').innerText = user.username;
+            const user = Telegram.WebApp.initDataUnsafe.user;
+            if (user && user.username) {
+                document.getElementById('user').innerText = user.username;
+            }
         }
 
         function openYT() {
@@ -124,7 +158,7 @@
 
         function joinChannel(link) {
             Telegram.WebApp.openTelegramLink(link);
-            Telegram.WebApp.showAlert('Channel join ho raha... Enjoy the fire! 🔥💦');
+            Telegram.WebApp.showAlert('Channel join ho raha... Enjoy! 🔥💦');
         }
     </script>
 </body>
